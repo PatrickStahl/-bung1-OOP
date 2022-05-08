@@ -2,7 +2,8 @@ public class ArrayUndSchleife
 {
    public static void main (String[] args)
    {
-    int [] a = {1,2,3,4,5};
+    int [] a = {1,2,6,4,63};
+    System.out.println("Array: " + java.util.Arrays.toString(a));
     int [] a1 = new int[(a.length+1)/2]; //gerade
     int [] a2 = new int[a.length/2];     //ungerade
     int g = 0;
