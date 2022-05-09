@@ -4,12 +4,12 @@ public class Anstoßen
 {
     int prost (int n)
     {
-        int Anzahl = 0;
-        for(int i = 1; i<n; i++)
+        n--;
+        if(n==1)
         {
-            Anzahl = i + Anzahl;
+            return 1;
         }
-        return Anzahl;
+        return (n + prost(n));
     }
 
 
@@ -21,7 +21,7 @@ public class Anstoßen
 
         n = scanner.nextInt();
         scanner.close();
-        Anstoßen InstanceAnstoßen = new Anstoßen();
+        Anstoßen InstanceAnstoßen = new Anstoßen(); //funktion prost ist nicht statisch, deshalb muss man eine neue instanz erstellen
         int Anstoesse = InstanceAnstoßen.prost(n);
         System.out.println("Die Zahl der Anstöße beträgt: " + Anstoesse);
     }
