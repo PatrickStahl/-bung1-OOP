@@ -31,10 +31,11 @@ public class Fibonacci
         System.out.println("Geben Sie die Länge n ihrer Fibonacci-Folge ein: ");
         int n = 0;
         n = scanner.nextInt();
-        while (n<0)
+        if(n<0)
         {
-            System.out.println("Geben Sie eine positive Zahl ein! ");
-            n = scanner.nextInt();
+            System.out.println("Negative Zahl eingegeben!");
+            System.out.println("Programm wird beendet...");
+            System.exit(0);
         }
         scanner.close();
         Calculate(n);
