@@ -21,7 +21,7 @@ public class Anstoßen
 
         n = scanner.nextInt();
         scanner.close();
-        Anstoßen InstanceAnstoßen = new Anstoßen(); //funktion prost ist nicht statisch, deshalb muss man eine neue instanz erstellen
+        Anstoßen InstanceAnstoßen = new Anstoßen(); //funktion prost ist nicht statisch, deshalb neue instanz
         int Anstoesse = InstanceAnstoßen.prost(n);
         System.out.println("Die Zahl der Anstöße beträgt: " + Anstoesse);
     }
